@@ -37,8 +37,9 @@ nav a {
 
 /* BEGIN HOME */
 #home {
-	background: gray;
+	background: no-repeat url(./images/bannierHome.jpg);
 	height: 100vh;
+	
 }
 #home h1 {
 	padding-top: 250px;
