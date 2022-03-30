@@ -12,7 +12,7 @@ nav {
 	background-color: #000;
 	color: #e0e2eb;
 	width: 100%;
-	height: 10vh;
+	height: 5vh;
 	text-transform: uppercase;
 	padding: 10px;
 	border-bottom: #e0e2eb solid 2px;
@@ -92,8 +92,12 @@ nav a {
 
 /* BEGIN ABOUT */
 #about {
-	background: red;
+	background: #e0e2eb;
 	height: 100vh;
+}
+#about p {
+	padding-top: 50px;
+	margin: 0 auto;
 }
 /* END ABOUT */
 
@@ -107,15 +111,15 @@ nav a {
 /* BEGIN CONTACT */
 #contact {
 	background: green;
-	height: 80vh;
+	height: 90vh;
 }
 /* END CONTACT */
 
-/* BEGIN HOME */
+/* BEGIN FOOTER */
 footer {
 	background-color: black;
 	width: 100%;
-	height: 20vh;
+	height: 10vh;
 	display: flex;
 	justify-content: space-evenly;
 	align-items: center;
@@ -130,7 +134,7 @@ footer i {
 	font-size: 40px;
 	padding: 5px;
 }
-/* END HOME */
+/* END FOOTER */
 
 @media screen and (max-width: 481px) {
 	#home h1 {

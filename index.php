@@ -32,11 +32,11 @@
 		<p>Je suis Antoine Lair, </p>
 		<p class="typing">Développeur Full-stack</p>
 	</section>
-	<section id="about"></section>
+	<section id="about">
+		<p>Actuellement étudiant...</p>
+	</section>
 	<section id="projects">
-		<!-- 			<a href="">
-				<img src="" alt="">
-			</a> -->
+
 	</section>
 	<section id="contact"></section>
 	<footer>
