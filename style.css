@@ -39,7 +39,6 @@ nav a {
 #home {
 	background: no-repeat url(./images/bannierHome.jpg);
 	height: 100vh;
-	
 }
 #home h1 {
 	padding-top: 250px;
@@ -50,6 +49,45 @@ nav a {
 	letter-spacing: 5px;
 	font-size: 64px;
 }
+#home p {
+	color: #e0e2eb;
+	text-align: center;
+	font-weight: bold;
+	font-size: 30px;
+	letter-spacing: 0.15em;
+}
+
+.typing {
+	max-width: 425px;
+	overflow: hidden; /* Ensures the content is not revealed until the animation */
+	border-right: 0.15em solid #e0e2eb; /* The typwriter cursor */
+	white-space: nowrap; /* Keeps the content on a single line */
+	margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+	letter-spacing: 0.15em; /* Adjust as needed */
+	animation: typing 6s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+	from {
+		width: 0;
+	}
+	to {
+		width: 100%;
+	}
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+	from,
+	to {
+		border-color: transparent;
+	}
+	50% {
+		border-color: #e0e2eb;
+	}
+}
+
 /* END HOME */
 
 /* BEGIN ABOUT */
@@ -93,3 +131,27 @@ footer i {
 	padding: 5px;
 }
 /* END HOME */
+
+@media screen and (max-width: 481px) {
+	#home h1 {
+		padding-top: 200px;
+		text-align: center;
+		text-transform: uppercase;
+		color: #e0e2eb;
+		font-weight: bold;
+		letter-spacing: 5px;
+		font-size: 50px;
+	}
+	#home p {
+		color: #e0e2eb;
+		text-align: center;
+		font-weight: bold;
+		font-size: 25px;
+		letter-spacing: 0.15em;
+	}
+
+	.typing {
+		max-width: 350px;
+		animation: typing 2s steps(40, end), blink-caret 0.75s step-end infinite;
+	}
+}

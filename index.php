@@ -28,7 +28,9 @@
 		</nav>
 	</header>
 	<section id="home">
-		<h1>Bienvenue sur mon site !</h1>
+		<h1>Bienvenu !</h1>
+		<p>Je suis Antoine Lair, </p>
+		<p class="typing">Développeur Full-stack</p>
 	</section>
 	<section id="about"></section>
 	<section id="projects">
