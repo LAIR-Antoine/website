@@ -103,14 +103,14 @@ nav a {
 
 /* BEGIN PROJECTS */
 #projects {
-	background: blue;
+	background: black;
 	height: 100vh;
 }
 /* END PROJECTS */
 
 /* BEGIN CONTACT */
 #contact {
-	background: green;
+	background: white;
 	height: 90vh;
 }
 /* END CONTACT */
