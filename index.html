@@ -6,7 +6,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>Antoine Lair</title>
-	<link rel="stylesheet" href="../style.css">
+	<link rel="stylesheet" href="./style.css">
 	<!-- Import font Google -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -84,46 +84,40 @@
 	<section id="about">
 		<div class="aboutleft">
 			<img src="./images/profil.jpg" alt="Ma photo de profil">
-			<a class="button" href="./files/cvVF.pdf" target="_blank">Lire mon CV</a>
+			<a class="button" href="./files/cv2024.pdf" target="_blank">Lire mon CV</a>
 		</div>
 		<div class="aboutright">
 		<p>Je suis <span>Antoine Lair</span>, étudiant en <span>BUT MMI</span> à l’IUT de Troyes. Je suis cette formation avec l’objectif de devenir <span>développeur full-stack</span>.</p>
-			<p>J’ai été étudiant à l’<span>UTT</span> pendant <span>deux ans</span> avant de me réorienter vers MMI qui me correspond mieux. J’y ai découvert le <span>développement web</span> à l’UNG, une association étudiante.</p>
-			<p>Ces années de dev m’ont permis de réaliser <span>plusieurs projets</span> comme le site de mon <span>club de triathlon</span> à Sens, qui est actuellement le plus abouti.</p>
-			<p>Je suis actuellement à la recherche d’une <span>alternance pour 2 ans</span> à partir de <span>septembre 2022</span> dans le <span>développement web</span> pour continuer à m’améliorer.</p>
-			
+		<p>Je suis actuellement en <span>alternance pour 2 ans</span> chez <span>Piscines Magiline</span> jusqu'en <span>août 2024</span>.</p>
+			<p>J’ai été étudiant à l’<span>UTT</span> pendant <span>deux ans</span> avant de me réorienter vers MMI qui me correspond mieux.</p>
+			<p>Ces années de dev m’ont permis de réaliser <span>plusieurs projets</span> comme le site de mon club de triathlon à Sens, et actuellement celui de mon club de vélo, l'<span>UC Chamoy</span>.</p>
 		</div>
-		
 
 	</section>
 	<section id="projects">
+		<div>
+			<a href="https://ucchamoy.fr" target="_blank">
+				<img src="./images/ucchamoy.png" alt="">
+			</a>
+			<p>Début 2024, je me suis lancé dans la refonte du site de l'UC Chamoy (projet en cours).</p>
+			<p>Le site est basé sur un Laravel. L'idée était de lier le front à une partie admin facile d'utilisation comme sur un CMS, pour laisser la maintenance du site au club.</p>
+			<p class="center"><i class="fab fa-laravel"></i> Laravel</p>
+		</div>
+		<div>
+			<a href="https://antoinelair.fr" target="_blank">
+				<img src="./images/antoinelair.png" alt="">
+			</a>
+			<p>Passionné par mes données sportives, je me suis créé un dashboard pour suivre mon entrainement.</p>
+			<p>Il est basé sur Laravel et utilise l'API de Strava pour collecter les données. J'ai utilisé Chart.js pour rendre ces données plus visuelles.</p>
+			<p class="center"><i class="fab fa-strava"></i> Strava API / Laravel</p>
+		</div>
 		<div>
 			<a href="https://sens-triathlon.com" target="_blank">
 				<img src="./images/senstri.png" alt="">
 			</a>
 			<p>Depuis septembre 2019, j'ai développé et je maintiens à jour le site de Sens Triathlon.</p>
 			<p>Le site était initialement sur un Wordpress mis en place en 2014. J'ai donc proposé de le modernisé et il a été réalisé en React (framework JS).</p>
-			<p class="center"><i class="fab fa-react"></i> React</p>
-			<p class="center"><i class="fab fa-node-js"></i> Node.js</p>
-		</div>
-		<div>
-			<a href="https://mmi21b10.sae203.ovh/" target="_blank">
-				<img src="./images/iut.png" alt="">
-			</a>
-			<p>Site réalisé sur 2 semaines en mars 2022 dans le cadre de ma formation à l'IUT de Troyes (BUT MMI).</p>
-			<p>Ce projet avait pour but de nous faire découvrir la mise en place d'un site utilisant une base de donnée. </p>
-			<p class="center"><i class="fab fa-php"></i> PHP</p>
-			<p class="center"><i class="fas fa-database"></i> MariaDB / PhpMyAdmin</p>
-		</div>
-		<div>
-			<a href="#" target="_blank">
-				<img src="./images/eve.png" alt="">
-			</a>
-			<p>Réalisé de septembre 2019 à février 2020, ce projet est ma première réalisation sur une longue durée.</p>
-			<p>Il était relié à une API que j'avais développé en Node.js.</p>
-			<p class="center"><i class="fab fa-react"></i> React</p>
-			<p class="center"><i class="fab fa-node-js"></i> Node.js</p>
-			<p class="center"><i class="fas fa-database"></i> MariaDB / Adminer</p>
+			<p class="center"><i class="fab fa-react"></i> React / Node.js</p>
 		</div>
 	</section>
 	<section id="contact">
@@ -157,7 +151,7 @@
 
 	</section>
 	<footer>
-		<p class="copyright">&copy; Antoine Lair - 2022</p>
+		<p class="copyright">&copy; Antoine Lair - 2024</p>
 		<p>
 			<a href="https://www.linkedin.com/in/lairantoine-dev/" target="_blank"><i class="fab fa-linkedin"></i></a>
 			<a href="https://github.com/LAIR-Antoine/" target="_blank"><i class="fab fa-github"></i></a>
