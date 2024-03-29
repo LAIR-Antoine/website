@@ -483,6 +483,12 @@ footer i {
 		max-width: 350px;
 		animation: typing 2s steps(40, end), blink-caret 0.75s step-end infinite;
 	}
+	#about {
+		padding-top: 20px;
+	}
+	#about .button {
+		margin: 25px auto 0 auto;
+	}
 	#projects {
 		height: 200vh;
 	}
