@@ -227,34 +227,23 @@ nav ul li ul li a {
 }
 
 .typing {
-	max-width: 425px;
-	overflow: hidden; /* Ensures the content is not revealed until the animation */
-	border-right: 0.15em solid #e0e2eb; /* The typwriter cursor */
-	white-space: nowrap; /* Keeps the content on a single line */
-	margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-	letter-spacing: 0.15em; /* Adjust as needed */
-	animation: typing 6s steps(40, end), blink-caret 0.75s step-end infinite;
+    max-width: 425px;
+    overflow: hidden;
+    border-right: 0.15em solid #e0e2eb;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: 0.15em;
+    animation: typing 4s steps(40, end) infinite, blink-caret 0.75s step-end infinite;
 }
 
-/* The typing effect */
 @keyframes typing {
-	from {
-		width: 0;
-	}
-	to {
-		width: 100%;
-	}
+    0%, 100% { width: 0; }
+    50% { width: 100%; }
 }
 
-/* The typewriter cursor effect */
 @keyframes blink-caret {
-	from,
-	to {
-		border-color: transparent;
-	}
-	50% {
-		border-color: #e0e2eb;
-	}
+    0%, 100% { border-color: transparent; }
+    25%, 75% { border-color: #e0e2eb; }
 }
 
 /* END HOME */
@@ -323,7 +312,7 @@ nav ul li ul li a {
 	}
 	#about {
 		
-		height: 150vh;
+		height: 120vh;
 		flex-direction: column;
 		
 	}
@@ -366,38 +355,41 @@ nav ul li ul li a {
 /* BEGIN CONTACT */
 #contact {
 	background: #e0e2eb;
-	height: 90vh;
-	padding-top: 80px;
+	height: 80vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 input[type="text"] {
 	color: #000;
 	background-color: #e0e2eb;
 	font-weight: bold;
 	border: #000 solid 2px;
-	border-radius: 10px;
+	border-radius: 5px;
 }
 input[type="tel"] {
 	color: #000;
 	background-color: #e0e2eb;
 	font-weight: bold;
 	border: #000 solid 2px;
-	border-radius: 10px;
+	border-radius: 5px;
 }
 input[type="email"] {
 	color: #000;
 	background-color: #e0e2eb;
 	font-weight: bold;
 	border: #000 solid 2px;
-	border-radius: 10px;
+	border-radius: 5px;
 }
 textarea {
 	color: #000;
 	background-color: #e0e2eb;
 	font-weight: bold;
 	border: #000 solid 2px;
-	width: 500px;
-	height: 200px;
+	width: 425px;
+	height: 100px;
 	border-radius: 10px;
+	resize: vertical;
 }
 ::placeholder {
 	color: #aaa;
@@ -405,9 +397,9 @@ textarea {
 }
 input[type="submit"] {
 	display: block;
-	width: 300px;
-	height: 50px;
-	margin: 25px auto 0 auto;
+	width: 100px;
+	height: 40px;
+	margin: 15px auto 0 auto;
 	color: #000;
 	background-color: #e0e2eb;
 	border: solid 2px #000;
@@ -415,15 +407,15 @@ input[type="submit"] {
 }
 input[type="submit"]:hover {
 	display: block;
-	margin-top: 25px;
+	margin-top: 15px;
 	color: #e0e2eb;
 	background-color: #000;
 	border: solid 2px #000;
 }
 .contactform {
-	padding: 20px;
+	padding: 20px 50px;
 	margin: 0 auto;
-	width: 50%;
+	width: fit-content;
 	border-radius: 15px;
 	color: #000;
 	background-color: #e0e2eb;
@@ -432,13 +424,18 @@ input[type="submit"]:hover {
 }
 .row {
 	display: flex;
-	justify-content: space-around;
+	justify-content: center;
 	flex-wrap: wrap;
+	column-gap: 50px;
 }
 
 .form-control {
 	padding: 5px 10px;
-	margin: 20px;
+	margin: 5px 0 0 0;
+}
+.colleft, .colright, .colfull {
+	display: flex;
+	flex-direction: column;
 }
 
 /* END CONTACT */
@@ -502,19 +499,34 @@ footer i {
 	}
 	.form-control {
 		padding: 5px 10px;
-		margin: 10px 5px;
+		margin:  5px 0 15px 0;
 	}
 	textarea {
-		width: 100%;
+		width: auto;
 		height: 100px;
 	}
 	.contactform {
 		width: 80%;
 		padding: 10px;
 	}
+	.colfull {
+		width: 250px;
+	}
+	.colleft, .colright {
+		width: 250px;
+	}
+	.contactform br {
+		display: none;
+	}
+	input[type="submit"] {
+		margin: 0 auto;
+	}
+	input[type="submit"]:hover {
+		margin-top: 0px;
+	}
 }
 @media screen and (max-width: 481px) {
 	#projects {
-		height: 300vh;
+		height: 200vh;
 	}
 }
