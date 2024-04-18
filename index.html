@@ -7,6 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>Antoine Lair</title>
 	<link rel="stylesheet" href="./style.css">
+	<link rel="stylesheet" href="https://use.typekit.net/kms2run.css">
 	<!-- Import font Google -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -77,9 +78,21 @@
 	</script>
 
 	<section id="home">
-		<h1>Bienvenue !</h1>
-		<p>Je suis Antoine Lair, </p>
+		<!-- <h1>Bienvenue !</h1> -->
+		<p class="name">Je suis Antoine Lair, </p>
 		<p class="typing">Développeur Full-stack</p>
+		<p>
+			<i class="fab fa-php"></i>
+			<i class="fab fa-js"></i>
+		</p>
+		<p>
+			<i class="fab fa-laravel"></i>
+			<i class="fab fa-symfony"></i>
+			<i class="fab fa-magento"></i>
+			<i class="fab fa-react"></i>
+			<i class="fab fa-vuejs"></i>
+			<i class="fab fa-angular"></i>
+		</p>
 	</section>
 	<section id="about">
 		<div class="aboutleft">
@@ -87,10 +100,10 @@
 			<a class="button" href="./files/cv2024.pdf" target="_blank">Lire mon CV</a>
 		</div>
 		<div class="aboutright">
-		<p>Je suis <span>Antoine Lair</span>, étudiant en <span>BUT MMI</span> à l’IUT de Troyes. Je suis cette formation avec l’objectif de devenir <span>développeur full-stack</span>.</p>
-		<p>Je suis actuellement en <span>alternance pour 2 ans</span> chez <span>Piscines Magiline</span> jusqu'en <span>août 2024</span>.</p>
-			<p>J’ai été étudiant à l’<span>UTT</span> pendant <span>deux ans</span> avant de me réorienter vers MMI qui me correspond mieux.</p>
-			<p>Ces années de dev m’ont permis de réaliser <span>plusieurs projets</span> comme le site de mon club de triathlon à Sens, et actuellement celui de mon club de vélo, l'<span>UC Chamoy</span>.</p>
+		<p>Je suis <span>Antoine Lair</span>, étudiant en <span>BUT MMI</span> à l’IUT de Troyes. Je suis en <span>alternance</span> chez <span>Piscines Magiline</span> jusqu'en <span>août 2024</span>. Je suis cette formation avec l’objectif de devenir <span>développeur full-stack</span>.</p>
+		<p>Je recherche une <span>alternance</span> à partir de <span>septembre 2024</span> pour <span>2 ans</span> à <span>Toulouse</span> dans le cadre d'un <span>mastère MBA Full-stack</span>.</p>	
+		<p>Je suis <span>très polyvalent</span>. Bien qu'ayant majoritairement travaillé sur du <span>PHP</span> et <span>JavaScript</span>, je n'ai pas peur de découvrir de <span>nouveaux langages</span>.</p>		
+		<p>Ces années de dev m’ont permis de réaliser <span>plusieurs projets</span> comme le site de mon club de triathlon à Sens, et actuellement celui de mon club de vélo, l'<span>UC Chamoy</span>.</p>
 		</div>
 
 	</section>
@@ -99,17 +112,17 @@
 			<a href="https://ucchamoy.fr" target="_blank">
 				<img src="./images/ucchamoy.png" alt="">
 			</a>
-			<p>Début 2024, je me suis lancé dans la refonte du site de l'UC Chamoy (projet en cours).</p>
+			<p>Début 2024, je me suis lancé dans la refonte du site de l'UC Chamoy.</p>
 			<p>Le site est basé sur un Laravel. L'idée était de lier le front à une partie admin facile d'utilisation comme sur un CMS, pour laisser la maintenance du site au club.</p>
-			<p class="center"><i class="fab fa-laravel"></i> Laravel</p>
+			<p class="center"><i class="fab fa-laravel"></i>  Laravel</p>
 		</div>
 		<div>
-			<a href="https://antoinelair.fr" target="_blank">
+			<a href="https://github.com/LAIR-Antoine/my-api" target="_blank">
 				<img src="./images/antoinelair.png" alt="">
 			</a>
 			<p>Passionné par mes données sportives, je me suis créé un dashboard pour suivre mon entrainement.</p>
 			<p>Il est basé sur Laravel et utilise l'API de Strava pour collecter les données. J'ai utilisé Chart.js pour rendre ces données plus visuelles.</p>
-			<p class="center"><i class="fab fa-strava"></i> Strava API / Laravel</p>
+			<p class="center"><i class="fab fa-strava"></i>  Strava API / Laravel</p>
 		</div>
 		<div>
 			<a href="https://sens-triathlon.com" target="_blank">
@@ -117,7 +130,31 @@
 			</a>
 			<p>Depuis septembre 2019, j'ai développé et je maintiens à jour le site de Sens Triathlon.</p>
 			<p>Le site était initialement sur un Wordpress mis en place en 2014. J'ai donc proposé de le modernisé et il a été réalisé en React (framework JS).</p>
-			<p class="center"><i class="fab fa-react"></i> React / Node.js</p>
+			<p class="center"><i class="fab fa-react"></i>  React / Node.js</p>
+		</div>
+		<div>
+			<a href="http://magento.antoinelair.fr/" target="_blank">
+				<img src="./images/magento.png" alt="">
+			</a>
+			<p>Curieux, j'ai voulu découvrir le développement e-commerce avec Magento.</p>
+			<p>J'ai donc installé et configuré la version community sur un VPS pour apprendre les bases. J'y ai ajouté une base de donnée de démo (Sample data)</p>
+			<p class="center"><i class="fab fa-magento"></i>  Magento</p>
+		</div>
+		<div>
+			<a href="https://poc-magiline.vercel.app/configurateur" target="_blank">
+				<img src="./images/magiline.png" alt="">
+			</a>
+			<p>POC réalisé dans le cadre de ma formation avec la création d'un configurateur de piscine en 3D.</p>
+			<p>Un formulaire de 3 étapes permet de choisir les options. La piscine apparaît alors en 3D pour l'ajuster. Sur mobile, on peut la visualiser en AR.</p>
+			<p class="center"><i class="fab fa-js"></i>  Three.js</p>
+		</div>
+		<div>
+			<a href="https://github.com/LAIR-Antoine/iut-react-native" target="_blank">
+				<img src="./images/reactnative.png" alt="">
+			</a>
+			<p>Dans ma formation à l'IUT, on a découvert le développement mobile.</p>
+			<p>La consigne était de relier l'application à l'API libre de Pokémon et d'en afficher les informations et faire quelques actions basiques.</p>
+			<p class="center"><i class="fab fa-react"></i>  React Native / Expo</p>
 		</div>
 	</section>
 	<section id="contact">
