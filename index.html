@@ -1,203 +1,208 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html>
+    <head>
+        <title>Antoine Lair</title>
 
-<head>
-	<meta charset="UTF-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>Antoine Lair</title>
-	<link rel="stylesheet" href="./style.css">
-	<link rel="stylesheet" href="https://use.typekit.net/kms2run.css">
-	<!-- Import font Google -->
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-	<!-- Import icons Font Awesome -->
-	<script src="https://kit.fontawesome.com/58dd6bd8ca.js" crossorigin="anonymous"></script>
-</head>
+        <!-- Import icons Font Awesome -->
+	    <script src="https://kit.fontawesome.com/58dd6bd8ca.js" crossorigin="anonymous"></script>
 
-<body>
-	<header>
-		<div class="nav-container">
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <section class="banner">
+            <header>
+                <nav>
+                    <ul class="nav-list">
+                        <li><a href="#about">Présentation</a></li>
+                        <li><a href="#projects">Projets</a></li>
+                        <li><a href="#interests">Passions</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+        
+            <div class="banner-text">
+                <p class="banner-first-text">Je suis Antoine Lair</p>
+                <h1>Étudiant <!-- MyDigitalSchool --> en mastère MBA Full-Stack <br />en alternance chez PH2M à Toulouse</h1>
 
-			<nav>
-				<div class="nav-mobile"><a id="navbar-toggle" alt="nav-button" aria-label="nav-button" href="#!"><span></span></a></div>
-				<ul class="nav-list">
-					<li>
-						<a href="#home">Accueil</a>
-					</li>
-					<li>
-						<a href="#about">à propos</a>
-					</li>
-					<li>
-						<a href="#projects">Réalisations</a>
-					</li>
+                <ul class="tech-list">
+                    <li><i class="fab fa-php"></i></li>
+                    <li><i class="fab fa-js"></i></li>
+                    <li><i class="fab fa-magento"></i></li>
+                    <li><i class="fab fa-laravel"></i></li>
+                    <li><i class="fab fa-react"></i></li>
+                    <li><i class="fab fa-symfony"></i></li>
+                    <li><i class="fab fa-vuejs"></i></li>
+                    <li><i class="fab fa-angular"></i></li>
+                </ul>
 
-					<li>
-						<a href="#contact">Contact</a>
-					</li>
-				</ul>
-			</nav>
-		</div>
+                <a class="banner-btn" href="">
+                    <svg id="hide-hover" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="50%" cy="50%" r="50" fill="#FB512D"></circle>
+                    </svg>
+                    <p>Contact</p>    
+                </a>
+            </div>
+        </section>
 
-	</header>
+        <section class="about" id="about">
+            <div class="about-img">
+                <img src="img/antoine-lair.jpg" alt="Antoine Lair">
+            </div>
+            <div class="about-text">
+                <div class="about-title-text">
+                    <h2>Présentation</h2>
+                    <span>Présentation</span>
+                </div>
+                <p>Je suis Antoine Lair, étudiant en mastère MBA Full-Stack à MyDigitalSchool Toulouse. Je suis en alternance chez PH2M jusqu'en août 2026.</p>
 
-	<script>
-		(function($) {
-			$(function() {
+                <p>Après 2 ans d'alternance chez Piscines Magiline, majoritairement sur Laravel, je me tourne maintenant sur l'apprentissage de Magento.</p>
+                    
+                <p>Je suis très polyvalent. Bien qu'ayant majoritairement travaillé sur du PHP et JavaScript, je n'ai pas peur de découvrir de nouveaux langages.</p>
+                    
+                <p>Ces années de dev m’ont permis de réaliser plusieurs projets comme le site de mon club de triathlon à Sens, ou celui de mon club de vélo, l'UC Chamoy.</p>
 
-				//  open and close nav 
-				$('#navbar-toggle').click(function() {
-					$('nav ul').slideToggle();
-				});
+                <a class="about-btn" href="./files/cv2024.pdf" target="_blank">
+                    <svg id="hide-hover" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="50%" cy="50%" r="50" fill="#FB512D"></circle>
+                    </svg>
+                    <p>Lire mon CV</p>    
+                </a>
+            </div>
+        </section>
 
+        <section class="projects" id="projects">
+            <div class="projects-title-text">
+                <h2>Projets</h2>
+                <span>Projets</span>
+            </div>
 
-				// Hamburger toggle
-				$('#navbar-toggle').on('click', function() {
-					this.classList.toggle('active');
-				});
+            <div class="projects-container">
+                <div class="projects-card">
+                    <img class="projects-svg" src="img/ucchamoy.png" alt="UC Chamoy">
+                    <div class="projects-card-simple">
+                        <h3>UC Chamoy</h3>
+                        <p><i class="fab fa-laravel"></i>  Laravel</p>
+                    </div>
+                </div>
+                <div class="projects-card">
+                    <img class="projects-svg" src="img/antoinelair.png" alt="Dashboard d'entraînement">
+                    <div class="projects-card-simple">
+                        <h3>Dashboard d'entraînement</h3>
+                        <p><i class="fab fa-strava"></i>  Strava API / Laravel</p>
+                    </div>
+                </div>
+                <div class="projects-card">
+                    <img class="projects-svg" src="img/senstri.png" alt="Sens Triathlon">
+                    <div class="projects-card-simple">
+                        <h3>Sens Triathlon</h3>
+                        <p><i class="fab fa-react"></i>  React / Node.js</p>
+                    </div>
+                </div>
+                <div class="projects-card">
+                    <img class="projects-svg" src="img/magento.png" alt="Démo Magento Luma">
+                    <div class="projects-card-simple">
+                        <h3>Démo Magento Luma</h3>
+                        <p><i class="fab fa-magento"></i>  Magento</p>
+                    </div>
+                </div>
+                <div class="projects-card">
+                    <img class="projects-svg" src="img/magiline.png" alt="POC Configurateur de piscine">
+                    <div class="projects-card-simple">
+                        <h3>POC Configurateur de piscine</h3>
+                        <p><i class="fab fa-js"></i>  Three.js</p>
+                    </div>
+                </div>
+                <div class="projects-card">
+                    <img class="projects-svg" src="img/reactnative.png" alt="Pokémon App">
+                    <div class="projects-card-simple">
+                        <h3>Pokémon App</h3>
+                        <p><i class="fab fa-react"></i>  React Native / Expo</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
+        <section class="interests" id="interests">
+            <div class="interests-title-text">
+                <h2>Passions</h2>
+                <span>Passions</span>
+            </div>
 
-				// If a link has a dropdown, add sub menu toggle.
-				$('nav ul li a:not(:only-child)').click(function(e) {
-					$(this).siblings('.navbar-dropdown').slideToggle("slow");
+            <div class="interests-container">
+                <div class="interests-card">
+                    <img class="interests-svg" src="img/triathlon-main.svg" alt="Triathlon">
+                    <img class="interests-svg-hover-left" src="img/triathlon-hover.svg" alt="Triathlon">
+                    <img class="interests-svg-hover-right" src="img/triathlon-hover.svg" alt="Triathlon">
+                    <div class="interests-card-simple">
+                        <h3>Triathlon</h3>
+                        <p>Triathlète depuis 2014, je rêve de venir à bout de mon premier Ironman. Avec 2 Half-Ironman à mon actif, je compte réaliser ce rêve le 22 juin 2025. Préparer ces objectifs m'aide à garder un équilibre vie pro et perso.</p>
+                    </div>
+                </div>
+                <div class="interests-card">
+                    <img class="interests-svg" src="img/bike-main.svg" alt="Vélo">
+                    <img class="interests-svg-hover-left" src="img/bike-hover.svg" alt="Vélo">
+                    <img class="interests-svg-hover-right" src="img/bike-hover.svg" alt="Vélo">
+                    <div class="interests-card-simple">
+                        <h3>Vélo ultra-distance</h3>
+                        <p>Avec une course de 300km réalisé en 2024 sur la RAP et un premier voyage à vélo de 800km en préparation, cette discipline renforce ma confiance en moi et mes capacités à m'adapter aux situations difficiles.</p>
+                    </div>
+                </div>
+                <div class="interests-card">
+                    <img class="interests-svg" src="img/marathon-main.svg" alt="Marathon">
+                    <img class="interests-svg-hover-left" src="img/marathon-hover.svg" alt="Marathon">
+                    <img class="interests-svg-hover-right" src="img/marathon-hover.svg" alt="Marathon">
+                    <div class="interests-card-simple">
+                        <h3>Marathon</h3>
+                        <p>Premier pas dans les courses d'endurance avec le marathon de Paris en 2023, le marathon est une épreuve qui permet d'améliorer la résilience. Mon prochain sera celui de Toulouse en 2024.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-					// Close dropdown when select another dropdown
-					$('.navbar-dropdown').not($(this).siblings()).hide("slow");
-					e.stopPropagation();
-				});
+        <section class="contact" id="contact">
+            <div class="contact-form-container">
+                <h2>Contactez-moi !</h2>
+                
+                <form action="mailto:lair.antoine89@orange.fr" method="POST">
+                    <div class="row">
+                        <input type="text" name="name" placeholder="Nom *" required>
+                        <input type="text" name="name" placeholder="Prénom *" required>
+                    </div>
+                    <div class="row">
+                        <input type="email" name="email" placeholder="Email *" required>
+                        <input type="text" name="phone" placeholder="Téléphone *" required>
+                    </div>
+                    <div class="row">
+                        <textarea name="message" placeholder="Message *" required rows="4"></textarea>
+                    </div>
 
-
-				// Click outside the dropdown will remove the dropdown class
-				$('html').click(function() {
-					$('.navbar-dropdown').hide();
-				});
-			});
-		})(jQuery);
-	</script>
-
-	<section id="home">
-		<!-- <h1>Bienvenue !</h1> -->
-		<p class="name">Je suis Antoine Lair, </p>
-		<p class="typing">Développeur Full-stack</p>
-		<p>
-			
-		</p>
-		<div class="icon-circle">
-			<span><i class="fab fa-php"></i></span>
-			<span><i class="fab fa-js"></i></span>
-			<span><i class="fab fa-laravel"></i></span>
-			<span><i class="fab fa-react"></i></span>
-			<span><i class="fab fa-symfony"></i></span>
-			<span><i class="fab fa-vuejs"></i></span>
-			<span><i class="fab fa-magento"></i></span>
-			<span><i class="fab fa-angular"></i></span>
-		</div>
-	</section>
-	<section id="about">
-		<div class="aboutleft">
-			<img src="./images/profil.jpg" alt="Ma photo de profil">
-			<a class="button" href="./files/cv2024.pdf" target="_blank">Lire mon CV</a>
-		</div>
-		<div class="aboutright">
-		<p>Je suis <span>Antoine Lair</span>, étudiant en <span>BUT MMI</span> à l’IUT de Troyes. Je suis en <span>alternance</span> chez <span>Piscines Magiline</span> jusqu'en <span>août 2024</span>. Je suis cette formation avec l’objectif de devenir <span>développeur full-stack</span>.</p>
-		<p>Je recherche une <span>alternance</span> à partir de <span>septembre 2024</span> pour <span>2 ans</span> à <span>Toulouse</span> dans le cadre d'un <span>mastère MBA Full-stack</span>.</p>	
-		<p>Je suis <span>très polyvalent</span>. Bien qu'ayant majoritairement travaillé sur du <span>PHP</span> et <span>JavaScript</span>, je n'ai pas peur de découvrir de <span>nouveaux langages</span>.</p>		
-		<p>Ces années de dev m’ont permis de réaliser <span>plusieurs projets</span> comme le site de mon club de triathlon à Sens, et actuellement celui de mon club de vélo, l'<span>UC Chamoy</span>.</p>
-		</div>
-
-	</section>
-	<section id="projects">
-		<div>
-			<a href="https://ucchamoy.fr" target="_blank">
-				<img src="./images/ucchamoy.png" alt="">
-			</a>
-			<p>Début 2024, je me suis lancé dans la refonte du site de l'UC Chamoy.</p>
-			<p>Le site est basé sur un Laravel. L'idée était de lier le front à une partie admin facile d'utilisation comme sur un CMS, pour laisser la maintenance du site au club.</p>
-			<p class="center"><i class="fab fa-laravel"></i>  Laravel</p>
-		</div>
-		<div>
-			<a href="https://github.com/LAIR-Antoine/my-api" target="_blank">
-				<img src="./images/antoinelair.png" alt="">
-			</a>
-			<p>Passionné par mes données sportives, je me suis créé un dashboard pour suivre mon entrainement.</p>
-			<p>Il est basé sur Laravel et utilise l'API de Strava pour collecter les données. J'ai utilisé Chart.js pour rendre ces données plus visuelles.</p>
-			<p class="center"><i class="fab fa-strava"></i>  Strava API / Laravel</p>
-		</div>
-		<div>
-			<a href="https://sens-triathlon.com" target="_blank">
-				<img src="./images/senstri.png" alt="">
-			</a>
-			<p>Depuis septembre 2019, j'ai développé et je maintiens à jour le site de Sens Triathlon.</p>
-			<p>Le site était initialement sur un Wordpress mis en place en 2014. J'ai donc proposé de le modernisé et il a été réalisé en React (framework JS).</p>
-			<p class="center"><i class="fab fa-react"></i>  React / Node.js</p>
-		</div>
-		<div>
-			<a href="http://magento.antoinelair.fr/" target="_blank">
-				<img src="./images/magento.png" alt="">
-			</a>
-			<p>Curieux, j'ai voulu découvrir le développement e-commerce avec Magento.</p>
-			<p>J'ai donc installé et configuré la version community sur un VPS pour apprendre les bases. J'y ai ajouté une base de donnée de démo (Sample data)</p>
-			<p class="center"><i class="fab fa-magento"></i>  Magento</p>
-		</div>
-		<div>
-			<a href="https://poc-magiline.vercel.app/configurateur" target="_blank">
-				<img src="./images/magiline.png" alt="">
-			</a>
-			<p>POC réalisé dans le cadre de ma formation avec la création d'un configurateur de piscine en 3D.</p>
-			<p>Un formulaire de 3 étapes permet de choisir les options. La piscine apparaît alors en 3D pour l'ajuster. Sur mobile, on peut la visualiser en AR.</p>
-			<p class="center"><i class="fab fa-js"></i>  Three.js</p>
-		</div>
-		<div>
-			<a href="https://github.com/LAIR-Antoine/iut-react-native" target="_blank">
-				<img src="./images/reactnative.png" alt="">
-			</a>
-			<p>Dans ma formation à l'IUT, on a découvert le développement mobile.</p>
-			<p>La consigne était de relier l'application à l'API libre de Pokémon et d'en afficher les informations et faire quelques actions basiques.</p>
-			<p class="center"><i class="fab fa-react"></i>  React Native / Expo</p>
-		</div>
-	</section>
-	<section id="contact">
-		<form class="contactform" action="mailto:lair.antoine89@orange.fr" method="POST">
-
-			<div class="row">
-				<div class="colleft">
-					<label class="form-label">Nom <span>*</span></label>
-					<input class="form-control" type="text" name="nom" placeholder="DOE">
-					<br />
-					<label class="form-label">Adresse mail <span>*</span></label>
-					<input class="form-control" type="email" name="email" placeholder="john.doe@domaine.fr">
-				</div>
-				<div class="colright">
-					<label class="form-label">Prénom <span>*</span></label>
-					<input class="form-control" type="text" name="prenom" placeholder="John">
-					<br />
-					<label class="form-label">Téléphone</label>
-					<input class="form-control" type="tel" name="tel" placeholder="0623456789">
-				</div>
-			</div>
-			<br />
-			<div class="row">
-				<div class="colfull">
-					<label class="form-label message-label">Message <span>*</span></label>
-					<textarea class="form-control" name="message" placeholder="Taper votre message ici..."></textarea>
-				</div>
-			</div>
-			<input class="btn btn-secondary" type="submit" value="Envoyer">
-
-
-		</form>
-
-	</section>
-	<footer>
-		<p class="copyright">&copy; Antoine Lair - 2024</p>
-		<p>
-			<a href="https://www.linkedin.com/in/lairantoine-dev/" target="_blank"><i class="fab fa-linkedin"></i></a>
-			<a href="https://github.com/LAIR-Antoine/" target="_blank"><i class="fab fa-github"></i></a>
-		</p>
-
-	</footer>
-</body>
-
+                    <a class="contact-btn" href="" target="_blank">
+                        <svg id="hide-hover" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="50%" cy="50%" r="50" fill="#FB512D"></circle>
+                        </svg>
+                        <p>Envoyer mon message</p>    
+                    </a>
+                </form>
+            </div>
+        </section>
+        
+        <footer>
+        
+            <p>&copy; Antoine Lair - 2024</p>
+            <nav>
+                <ul class="nav-list">
+                    <li><a href="#about">Présentation</a></li>
+                    <li><a href="#projects">Projets</a></li>
+                    <li><a href="#interests">Passions</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <ul class="social-list">
+                <li><a href="https://www.linkedin.com/in/lairantoine-dev/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                <li><a href="https://github.com/LAIR-Antoine/" target="_blank"><i class="fab fa-github"></i></a></li>
+            </ul>
+        
+        </footer>
+    </body>
 </html>
