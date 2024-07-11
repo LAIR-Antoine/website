@@ -643,8 +643,7 @@ footer a {
 }
 
 
-
-@media only screen and (min-width: 768px) and (max-width: 1023px) {    
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
     .banner-text h1 {
         font-size: 3rem;
     }
@@ -654,7 +653,6 @@ footer a {
     }
     .about-img {
         width: 30%;
-
     }
     .about-img img {
         width: 100%;
@@ -664,15 +662,12 @@ footer a {
         width: 70%;
         padding: 0 20px;
     }
-
     .projects {
         padding: 50px 0;
     }
-
     .projects-title-text {
         margin-left: 50px;
     }
-
     .projects-card {
         width: 250px;
     }
@@ -682,11 +677,9 @@ footer a {
     .banner {
         padding: 0 20px;
     }
-
     .banner .nav-list {
         display: none;
     }
-    
     .banner-text h1 {
         font-size: 2rem;
     }
@@ -701,56 +694,43 @@ footer a {
     .about-img {
         width: 100%;
         padding-top: 20px;
-
     }
     .about-text {
         width: 100%;
     }
-
     .projects {
         padding: 50px 0;
     }
-
     .projects-title-text {
         margin-left: 10px !important;
     }
-
     .interests {
         padding: 50px 20px;
     }
-
     .interests-container {
         flex-direction: column;
     }
-
     .contact-form-container {
         max-width: 400px;
         align-items: flex-start;
     }
-
     .contact-form-container .row {
         flex-direction: column;
         row-gap: 20px;
         max-width: 330px;
     }
-
     .contact-form-container input {
         width: auto;
     }
-
     .contact-form-container textarea {
         width: auto;
     }
-
     .contact-form-container h2 {
         font-size: 2rem;
     }
-
     footer {
         padding: 20px;
-        
     }
-
     footer .nav-list {
         display: none;
     }
@@ -760,7 +740,6 @@ footer a {
     .contact-form-container {
         max-width: 700px;
     }
-
     .contact-form-container .row {
         width: calc(700px - 40px);
     }
