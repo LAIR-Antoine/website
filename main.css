@@ -645,6 +645,9 @@ footer a {
 
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {    
+    .banner-text h1 {
+        font-size: 3rem;
+    }
     .about {
         padding: 50px 0;
         column-gap: 10px;
@@ -676,12 +679,28 @@ footer a {
 }
 
 @media only screen and (max-width: 767px) {
+    .banner {
+        padding: 0 20px;
+    }
+
+    .banner .nav-list {
+        display: none;
+    }
+    
+    .banner-text h1 {
+        font-size: 2rem;
+    }
+    .tech-list {
+        flex-wrap: wrap;
+        row-gap: 25px;
+    }
     .about {
         flex-direction: column-reverse;
-        padding: 100px;
+        padding: 50px 20px;
     }
     .about-img {
         width: 100%;
+        padding-top: 20px;
 
     }
     .about-text {
@@ -694,6 +713,10 @@ footer a {
 
     .projects-title-text {
         margin-left: 10px !important;
+    }
+
+    .interests {
+        padding: 50px 20px;
     }
 
     .interests-container {
@@ -709,6 +732,23 @@ footer a {
         flex-direction: column;
         row-gap: 20px;
         max-width: 330px;
+    }
+
+    .contact-form-container input {
+        width: auto;
+    }
+
+    .contact-form-container textarea {
+        width: auto;
+    }
+
+    .contact-form-container h2 {
+        font-size: 2rem;
+    }
+
+    footer {
+        padding: 20px;
+        
     }
 
     footer .nav-list {
