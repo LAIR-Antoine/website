@@ -168,6 +168,7 @@ header a:hover {
     width: 50%;
     display: flex;
     flex-direction: column;
+    overflow: hidden;
 }
 
 .about-title-text {
@@ -639,4 +640,88 @@ footer a {
 
 .social-list i {
     font-size: 2.4rem;
+}
+
+
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {    
+    .about {
+        padding: 50px 0;
+        column-gap: 10px;
+    }
+    .about-img {
+        width: 30%;
+
+    }
+    .about-img img {
+        width: 100%;
+        height: 100%;
+    }
+    .about-text {
+        width: 70%;
+        padding: 0 20px;
+    }
+
+    .projects {
+        padding: 50px 0;
+    }
+
+    .projects-title-text {
+        margin-left: 50px;
+    }
+
+    .projects-card {
+        width: 250px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .about {
+        flex-direction: column-reverse;
+        padding: 100px;
+    }
+    .about-img {
+        width: 100%;
+
+    }
+    .about-text {
+        width: 100%;
+    }
+
+    .projects {
+        padding: 50px 0;
+    }
+
+    .projects-title-text {
+        margin-left: 10px !important;
+    }
+
+    .interests-container {
+        flex-direction: column;
+    }
+
+    .contact-form-container {
+        max-width: 400px;
+        align-items: flex-start;
+    }
+
+    .contact-form-container .row {
+        flex-direction: column;
+        row-gap: 20px;
+        max-width: 330px;
+    }
+
+    footer .nav-list {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 900px) {
+    .contact-form-container {
+        max-width: 700px;
+    }
+
+    .contact-form-container .row {
+        width: calc(700px - 40px);
+    }
 }
